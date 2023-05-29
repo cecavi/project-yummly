@@ -12,7 +12,7 @@ import UserPage from 'components/UserPage'
 import MyPage from 'components/MyPage'
 import Recipe from 'components/Recipe'
 import NotFound from 'components/NotFound'
-//import { GlobalStyles, OuterWrapper, Innerwrapper } from 'components/styles/GlobalStyles'
+import { GlobalStyles, OuterWrapper, Innerwrapper } from 'components/styles/GlobalStyles'
 
 
 export const App = () => {
@@ -22,6 +22,7 @@ export const App = () => {
   return (
     <Provider store={store}>
       <BrowserRouter>
+      <GlobalStyles />
       <OuterWrapper>
       <Header />
         <Innerwrapper>

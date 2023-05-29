@@ -8,6 +8,7 @@ import TagsVisual from './TagsVisual'
 //import SNACK from "../media/SNACK.jpg"
 //import FOOD from "../media/FOOD.jpg"
 //import DINNER from "../media/DINNER.jpg"
+import styled from "styled-components/macro";
 import { API_URL } from 'utils/utils';
 
 
