@@ -183,21 +183,21 @@ const Form = ({ setCollapsed }) => {
 
 export default Form
 
-const FormStyledDiv = styled(StyledDiv)`
+const FormStyledDiv = styled.div`
   
-  `
+`
 
 const CreateRecipeDiv = styled.div`
  
 `
 
-const AddNewRecipeButton = styled(StyledButton)`
+const AddNewRecipeButton = styled.button`
    
-  `
+`
 
 const TagsDiv = styled.div`
   
-  `
+`
 
 const Tag = styled.div`
 

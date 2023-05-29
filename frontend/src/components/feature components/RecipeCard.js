@@ -108,4 +108,7 @@ const RecipeCard = ({recipeList, liked, setLiked}) => {
   )
 }
 
+const SmallDiv = styled.div`
+`
+
 export default RecipeCard

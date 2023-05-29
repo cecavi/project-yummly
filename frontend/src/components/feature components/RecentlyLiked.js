@@ -54,6 +54,6 @@ if (posts.length > 0) {
 
 export default RecentlyLiked
 
-const MarginTopDiv = styled(StyledNonTransparentDiv)`
+const MarginTopDiv = styled.div`
     
 `

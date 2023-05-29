@@ -3,7 +3,8 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, batch } from "react-redux";
 import styled from "styled-components/macro";
 import { API_URL } from "utils/utils";
-import recipeReducer from "./reducers/recipeReducer";
+import recipeReducer from '../../reducers/recipeReducer';
+
 
 const SingleFilter = ({ svg, title, array }) => {
   const [click, setClick] = useState(false)

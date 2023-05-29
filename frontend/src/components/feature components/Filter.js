@@ -66,10 +66,10 @@ const Filter = () => {
 
 export default Filter
 
-const FilterDiv = styled(StyledTransparentDiv)`
+const FilterDiv = styled.div`
 
 `
-const FilterBtn = styled(UnstyledBtn)`
+const FilterBtn = styled.button` 
     
 `
 

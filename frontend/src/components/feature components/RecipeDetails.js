@@ -82,14 +82,14 @@ const RecipeInstructionsDiv = styled.div`
     
 `
 
-const Ingredients = styled(StyledNonTransparentDiv)`
+const Ingredients = styled.div`
     
 `
-const Instructions = styled(StyledNonTransparentDiv)`
+const Instructions = styled.div`
     
 
 `
-const TagRecipe = styled(Tag)`
+const TagRecipe = styled.div`
   
 `
 
@@ -97,6 +97,6 @@ const TagDiv = styled.div`
     
 `
 
-const BigImageDiv = styled(ImageDiv)`
+const BigImageDiv = styled.img`
 
 `

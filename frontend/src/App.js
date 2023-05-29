@@ -22,7 +22,6 @@ export const App = () => {
   return (
     <Provider store={store}>
       <BrowserRouter>
-      <GlobalStyles />
       <OuterWrapper>
       <Header />
         <Innerwrapper>

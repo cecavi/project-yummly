@@ -61,6 +61,6 @@ const RecipeInfoContainer = styled.div`
   
 `
 
-const UserInfoDiv = styled(SmallDiv)`
+const UserInfoDiv = styled.div`
     
   `
