@@ -3,8 +3,8 @@ import { API_URL } from 'utils/utils'
 import { batch } from 'react-redux'
 import { useNavigate, Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { StyledDiv, StyledFlexDiv } from './styles/DivStyles'
-import { StyledButton } from './styles/ButtonStyles'
+//import { StyledDiv, StyledFlexDiv } from './styles/DivStyles'
+//import { StyledButton } from './styles/ButtonStyles'
 
 const Login = ({loginType, loginHeadline, buttonText}) => {
   const [username, setUsername] = useState('')

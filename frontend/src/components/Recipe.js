@@ -3,7 +3,7 @@ import { API_URL } from 'utils/utils'
 import { useParams, Link } from 'react-router-dom'
 import RecipeDetails from './feature components/RecipeDetails'
 import styled from 'styled-components/macro'
-import { SmallDiv } from './styles/GlobalStyles'
+//import { SmallDiv } from './styles/GlobalStyles'
 
 const Recipe = () => {
   const [recipe, setRecipe] = useState([])

@@ -1,12 +1,12 @@
 import { useNavigate, Link, useParams } from 'react-router-dom'
 import React, { useState, useEffect } from 'react'
-import { SmallDiv, TagContainer, StyledSvg  } from './styles/GlobalStyles'
-import { RecipeList, RecipeContainer } from './styles/DivStyles'
+//import { SmallDiv, TagContainer, StyledSvg  } from './styles/GlobalStyles'
+//import { RecipeList, RecipeContainer } from './styles/DivStyles'
 import { API_URL } from 'utils/utils'
 import TagsVisual from './feature components/TagsVisual'
-import { LikeContainer } from './styles/DivStyles'
-import { PostsToggle, HeadlineDiv } from './styles/DivStyles'
-import { RecipeFeed } from './styles/DivStyles'
+//import { LikeContainer } from './styles/DivStyles'
+//import { PostsToggle, HeadlineDiv } from './styles/DivStyles'
+//import { RecipeFeed } from './styles/DivStyles'
 
 const UserPage = () => {
 const [posts, setPosts] = useState([])

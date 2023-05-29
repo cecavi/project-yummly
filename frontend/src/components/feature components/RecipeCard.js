@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { SmallDiv, TagContainer, StyledSvg  } from '../styles//GlobalStyles'
-import { RecipeList, RecipeContainer, LikeContainer, DescriptionImagesTagsDiv, DescriptionDiv, ImageDiv } from '../styles/DivStyles'
+//import { SmallDiv, TagContainer, StyledSvg  } from '../styles//GlobalStyles'
+//import { RecipeList, RecipeContainer, LikeContainer, DescriptionImagesTagsDiv, DescriptionDiv, ImageDiv } from '../styles/DivStyles'
 import TagsVisual from './TagsVisual'
-import BREAKFAST from "../media/BREAKFAST.jpg"
-import LUNCH from "../media/LUNCH.jpg"
-import SNACK from "../media/SNACK.jpg"
-import FOOD from "../media/FOOD.jpg"
-import DINNER from "../media/DINNER.jpg"
+//import BREAKFAST from "../media/BREAKFAST.jpg"
+//import LUNCH from "../media/LUNCH.jpg"
+//import SNACK from "../media/SNACK.jpg"
+//import FOOD from "../media/FOOD.jpg"
+//import DINNER from "../media/DINNER.jpg"
 import { API_URL } from 'utils/utils';
 
 

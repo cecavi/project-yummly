@@ -2,7 +2,7 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import { configureStore, combineReducers } from '@reduxjs/toolkit'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import recipeReducer from '/reducers/recipeReducer'
+import recipeReducer from './/reducers/recipeReducer'
 import Login from 'components/Login'
 import Header from 'components/Header'
 import RecipeFeed from 'components/RecipeFeed'
@@ -12,7 +12,7 @@ import UserPage from 'components/UserPage'
 import MyPage from 'components/MyPage'
 import Recipe from 'components/Recipe'
 import NotFound from 'components/NotFound'
-import { GlobalStyles, OuterWrapper, Innerwrapper } from 'components/styles/GlobalStyles'
+//import { GlobalStyles, OuterWrapper, Innerwrapper } from 'components/styles/GlobalStyles'
 
 
 export const App = () => {

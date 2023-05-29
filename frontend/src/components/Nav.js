@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink, useNavigate, useParams } from 'react-router-dom'
 import styled from 'styled-components/macro'
-import { UnstyledBtn } from './styles/ButtonStyles'
+//import { UnstyledBtn } from './styles/ButtonStyles'
 import SearchForUser from './feature components/SearchForUser'
 
 const Nav = () => {

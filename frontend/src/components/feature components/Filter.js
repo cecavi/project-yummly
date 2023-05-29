@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { StyledTransparentDiv } from "../styles/DivStyles"
+//import { StyledTransparentDiv } from "../styles/DivStyles"
 import SingleFilter from "./SingleFilter";
 import { MealArray } from "./Form"
 import { PreferencesArray } from "./Form"
 import { TimeArray } from "./Form"
 import styled from "styled-components/macro";
-import { UnstyledBtn } from "components/styles/ButtonStyles";
+//import { UnstyledBtn } from "components/styles/ButtonStyles";
 
 
 const Filter = () => {
