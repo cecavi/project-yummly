@@ -17,7 +17,7 @@ export const Header = () => {
         <StyledP>Logged in as: {username}</StyledP>
         )} */}
         <NavLink to="/" className="logo-group">
-          <h1>FEED ME</h1>
+          <h1>YUMMLY!</h1>
           <StyledLogo>
           </StyledLogo>
         </NavLink>
@@ -29,11 +29,11 @@ export const Header = () => {
 export default Header
 
 const StyledHeader = styled.header`
-  
+
 `
 
 const StyledLogo = styled.svg`
- 
+
 `
 
 const Wrapper = styled.div`

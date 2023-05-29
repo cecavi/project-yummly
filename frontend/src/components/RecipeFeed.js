@@ -92,7 +92,6 @@ const RecipeFeed = () => {
             <button  
               type="button"
               onClick={toggle}>
-              <img src={AddIcon} />
               <p>add new recipe</p>
             </button>
             {!collapsed && <Form collapsed={collapsed} setCollapsed={setCollapsed} />}
@@ -108,6 +107,16 @@ const RecipeFeed = () => {
     </SectionAroundFeed>
     )
   }
+
+//<ButtonContainer>
+//<button  
+//type="button"
+//onClick={toggle}>
+//<img src={AddIcon} />
+//<p>add new recipe</p>
+//</button>
+//{!collapsed && <Form collapsed={collapsed} setCollapsed={setCollapsed} />}
+//</ButtonContainer>
 
 export default RecipeFeed
 
