@@ -3,11 +3,11 @@ import styled from "styled-components/macro";
 import { StyledNonTransparentDiv } from "components/styles/DivStyles";
 import { Tag } from "./TagsVisual";
 import { ImageDiv } from "components/styles/DivStyles";
-import BREAKFAST from "../media/BREAKFAST.jpg"
-import LUNCH from "../media/LUNCH.jpg"
-import SNACK from "../media/SNACK.jpg"
-import FOOD from "../media/FOOD.jpg"
-import DINNER from "../media/DINNER.jpg"
+//import BREAKFAST from "../media/BREAKFAST.jpg"
+//import LUNCH from "../media/LUNCH.jpg"
+//import SNACK from "../media/SNACK.jpg"
+//import FOOD from "../media/FOOD.jpg"
+//import DINNER from "../media/DINNER.jpg"
 
 const RecipeDetails = ({ recipeInfo }) => {
 
@@ -82,14 +82,14 @@ const RecipeInstructionsDiv = styled.div`
     
 `
 
-const Ingredients = styled(StyledNonTransparentDiv)`
+const Ingredients = styled.div`
     
 `
-const Instructions = styled(StyledNonTransparentDiv)`
+const Instructions = styled.div`
     
 
 `
-const TagRecipe = styled(Tag)`
+const TagRecipe = styled.div`
   
 `
 

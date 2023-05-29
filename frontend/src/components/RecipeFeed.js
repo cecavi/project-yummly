@@ -4,7 +4,7 @@ import Form from './feature components/Form';
 import Filter from './feature components/Filter';
 import RecentlyLiked from './feature components/RecentlyLiked';
 import styled from 'styled-components/macro';
-import AddIcon from './media/AddIcon.png'
+//import AddIcon from './media/AddIcon.png'
 import RecipesInFeed from './feature components/RecipesInFeed';
 
 const RecipeFeed = () => {
@@ -92,7 +92,6 @@ const RecipeFeed = () => {
             <button  
               type="button"
               onClick={toggle}>
-              <img src={AddIcon} />
               <p>add new recipe</p>
             </button>
             {!collapsed && <Form collapsed={collapsed} setCollapsed={setCollapsed} />}
@@ -108,6 +107,16 @@ const RecipeFeed = () => {
     </SectionAroundFeed>
     )
   }
+
+//<ButtonContainer>
+//<button  
+//type="button"
+//onClick={toggle}>
+//<img src={AddIcon} />
+//<p>add new recipe</p>
+//</button>
+//{!collapsed && <Form collapsed={collapsed} setCollapsed={setCollapsed} />}
+//</ButtonContainer>
 
 export default RecipeFeed
 

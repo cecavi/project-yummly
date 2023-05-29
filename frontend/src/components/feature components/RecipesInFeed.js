@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector, batch } from 'react-redux'
-import recipeReducer from './reducers/recipeReducer';
+import recipeReducer from 'reducers/recipeReducer';
 import { API_URL } from 'utils/utils';
 import { RecipeFeed } from "../styles/DivStyles"
 
