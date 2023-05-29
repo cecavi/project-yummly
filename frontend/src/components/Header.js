@@ -29,9 +29,7 @@ export const Header = () => {
 export default Header
 
 const StyledHeader = styled.header`
-h1{
-    text-decoration: none;
-}
+
 `
 
 const StyledLogo = styled.svg`
