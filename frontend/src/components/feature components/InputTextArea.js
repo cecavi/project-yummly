@@ -1,4 +1,4 @@
-//import { SrOnly } from "components/styles/GlobalStyles";
+import { SrOnly } from "components/styles/GlobalStyles";
 import React from "react";
 
 const InputTextArea = ({ srOnly, placeholder, value, onChange }) => {

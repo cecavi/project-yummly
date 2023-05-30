@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro'
+import { SmallDiv } from './GlobalStyles'
 
 export const StyledTransparentDiv = styled.div`
 
@@ -24,7 +25,7 @@ export const RecipeContainer = styled.div`
 `
 
 export const RecipeList = styled.div`
-
+border: 4px;
 `
 
 
@@ -53,3 +54,4 @@ export const DescriptionDiv = styled.div `
 export const ImageDiv = styled.div `
  border: 4px;
 `
+

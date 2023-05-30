@@ -98,7 +98,7 @@ const RecipeSchema = new mongoose.Schema({
   },
   likes: {
     type: Number,
-    default: 0
+    default: null
   },
   userId: {
     type: String,

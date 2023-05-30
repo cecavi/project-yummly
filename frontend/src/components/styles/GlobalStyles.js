@@ -80,13 +80,13 @@ export const SrOnly = styled.div`
 `
 
 export const SmallDiv = styled.div`
-
+ border:2px;
 `
 
 export const TagContainer = styled.div`
-
+ border:2px;
 `
 
 export const StyledSvg = styled.svg`
-
+ border:2px;
 `

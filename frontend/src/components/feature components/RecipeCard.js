@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-//import { SmallDiv, TagContainer, StyledSvg  } from '../styles//GlobalStyles'
+import { SmallDiv, TagContainer, StyledSvg  } from '../styles//GlobalStyles'
 import { RecipeList, RecipeContainer, LikeContainer, DescriptionImagesTagsDiv, DescriptionDiv, ImageDiv } from '../styles/DivStyles'
 import TagsVisual from './TagsVisual'
 //import BREAKFAST from "../media/BREAKFAST.jpg"
@@ -63,7 +63,7 @@ const RecipeCard = ({recipeList, liked, setLiked}) => {
         </SmallDiv>
         <Link to={`/recipes/${singleRecipe._id}`}>
         <ImageDiv>
-            {singleRecipe.recipe.tags.includes('breakfast') ? <img src={BREAKFAST} /> : singleRecipe.recipe.tags.includes('lunch') ? <img src={LUNCH} /> : singleRecipe.recipe.tags.includes('dinner') ? <img src={DINNER} /> : singleRecipe.recipe.tags.includes('snack') ? <img src={SNACK} /> :  <img src={FOOD} />}
+            {singleRecipe.recipe.tags.includes('breakfast') ? <img src="" /> : singleRecipe.recipe.tags.includes('lunch') ? <img src="" /> : singleRecipe.recipe.tags.includes('dinner') ? <img src="" /> : singleRecipe.recipe.tags.includes('snack') ? <img src="" /> :  <img src="" />}
             </ImageDiv>
             <DescriptionDiv>
             <h3>{singleRecipe.recipe.name}</h3>
@@ -108,8 +108,5 @@ const RecipeCard = ({recipeList, liked, setLiked}) => {
  </RecipeList>
   )
 }
-
-const SmallDiv = styled.div`
-`
 
 export default RecipeCard
