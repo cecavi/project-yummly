@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 //import { SmallDiv, TagContainer, StyledSvg  } from '../styles//GlobalStyles'
-//import { RecipeList, RecipeContainer, LikeContainer, DescriptionImagesTagsDiv, DescriptionDiv, ImageDiv } from '../styles/DivStyles'
+import { RecipeList, RecipeContainer, LikeContainer, DescriptionImagesTagsDiv, DescriptionDiv, ImageDiv } from '../styles/DivStyles'
 import TagsVisual from './TagsVisual'
 //import BREAKFAST from "../media/BREAKFAST.jpg"
 //import LUNCH from "../media/LUNCH.jpg"
