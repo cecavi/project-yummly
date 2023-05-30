@@ -38,8 +38,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 :root {
-  --color-black: #000;
-  --color-darkGrey: #383838;
+  --color-red: #FF5858;
+  --color-white: #FFFFFF;
   --color-lightGrey: #8A8989;
   --color-darkSand: #F2C19F;
   --color-sand: #F9DAC6;
@@ -47,10 +47,9 @@ p, h1, h2, h3, h4, h5, h6 {
   --color-vividBlue: #0000FF;
   --color-softPink: #F5C8C8;
   
-  --font-main: 'Barlow', sans-serif;
-  --font-secondary: 'MuseoModerno', cursive;
+  --font-main: 'EB Garamond', serif;
   
-  // example: font-family: var(--font-secondary)
+  // example: font-family: var(--font-main)
 }
 
 a {
@@ -61,18 +60,159 @@ ul {
     list-style-type: none;
 } 
 
-`
+
+//regular CSS
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    background-color: var(--color-red);
+    color: var(--color-white);
+  }
+
+  h1, h2 {
+    font-family: var(--font-main);
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+  }
+  
+  a {
+    color: var(--color-white);
+    text-decoration: none;
+  
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0%;
+    left: -1000px;
+    padding-top: 15%;
+    background: linear-gradient(147deg,rgba(249,218,198,1) 0%,rgba(242,193,159,1) 100%);
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+
+    a {
+      &:hover {
+          color: var(--color-vividBlue);
+        }
+    }
+    li {
+      margin-left: -40px;
+      margin-top: 10px;
+    }
+
+    a, button {
+      font-size: 1.2rem;
+      color: var(--color-darkGrey);
+      padding: 10px 20px 13px 20px;
+      border-radius: 20px;
+      transition: all 0.25s ease-in-out;
+
+      &.active {
+        background-color: var(--color-darkSand);
+        border-radius: 20px;
+      }
+    } 
+
+    @media (min-width: 668px) {
+      /* padding-top: 20%; */
+
+    }
+
+    @media (min-width: 1024px) {
+      height: inherit;
+      background: inherit;
+      position: initial;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding: 0px 20px 26px;
+      width: 100%;
+      opacity: 1;
+
+      a, button {
+        padding: 10px 20px 13px 20px;
+        margin-left: 2.5rem;
+
+          &:hover {
+          color: var(--color-vividBlue);
+          background-color: var(--color-darkSand);
+          border-radius: 20px;
+        }
+      }
+
+    }
+  }
+// CSS classes
+  .nav-menu.active {
+    position: absolute;
+    left: 0px;
+    border-radius: 10px;
+    padding-inline-start: 0px;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+
+    @media (min-width: 668px) {
+      
+    }
+    @media (min-width: 1024px) {
+      background-color: inherit;
+      position: initial
+
+    }
+  }
+
+  .logo-group {
+    display: flex;
+    align-items: center;
+    transform: rotate(0.0turn);
+    transition: all 0.5s ease-in-out;
+    margin-left: 5%;
+
+    a {
+      &:hover {
+        color: var(--color-black);
+      }
+    }
+    &:hover {
+      transform: rotate(0.05turn);
+    }
+    @media (min-width: 1024px) {
+    min-width: 270px;
+    }
+  }
+  `
 
 
 export const OuterWrapper = styled.main`
-
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
 `
 
 export const Innerwrapper = styled.div`
-
+margin: 0 auto;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 100px;
 `
 export const FeedSection = styled.section`
-
+height: 100%;
+  margin-top: 4%;
+  display: grid;
+  width: 100%;
+  position: relative;
 `
 
 export const SrOnly = styled.div`

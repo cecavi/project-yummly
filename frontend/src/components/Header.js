@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import Nav from './Nav'
+//import Logo from './media/Logo.svg'
 import { NavLink, useNavigate } from 'react-router-dom'
 
 export const Header = () => {
@@ -19,6 +20,7 @@ export const Header = () => {
         <NavLink to="/" className="logo-group">
           <h1>YUMMLY!</h1>
           <StyledLogo>
+          {/*<Logo /> {Logo}*/}
           </StyledLogo>
         </NavLink>
       </StyledHeader>
@@ -29,15 +31,31 @@ export const Header = () => {
 export default Header
 
 const StyledHeader = styled.header`
+display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 100px;
 
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  
 `
 
 const StyledLogo = styled.svg`
-
+   
 `
 
 const Wrapper = styled.div`
-
+width: 100%;
+display: flex;
+justify-content: center;
+background-color: var(--color-red);
+position: fixed;
+z-index: 99;
 `
 
 const StyledP = styled.p`

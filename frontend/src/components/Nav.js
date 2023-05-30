@@ -69,5 +69,13 @@ const StyledIcon = styled.svg`
 `
 
 const StyledNav = styled.nav`
+height: 80px;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  
+  @media (min-width: 1024px) {
+    width: 70%;
 
+  }
 `
