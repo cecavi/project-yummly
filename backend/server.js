@@ -119,7 +119,7 @@ app.post("/register", async (req, res) => {
 
   try {
     const salt = bcrypt.genSaltSync();
-    if (password.length < 8) {
+    if (password.length < 5) {
       res.status(400).json({
         success: false,
         response: "Password must be at least 8 characters long"

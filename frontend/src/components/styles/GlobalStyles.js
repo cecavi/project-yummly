@@ -76,7 +76,7 @@ export const FeedSection = styled.section`
 `
 
 export const SrOnly = styled.div`
-
+ border:2px;
 `
 
 export const SmallDiv = styled.div`

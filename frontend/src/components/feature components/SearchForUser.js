@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from "react";
-//import { SrOnly } from "components/styles/GlobalStyles";
+import { SrOnly } from "components/styles/GlobalStyles";
 import styled from "styled-components/macro";
-//import { BsSearch } from 'react-icons/bs';
+import { BsSearch } from 'react-icons/bs';
 import { API_URL } from "utils/utils";
 import { Link } from "react-router-dom";
 
