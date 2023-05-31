@@ -107,6 +107,8 @@ export const StyledDiv = styled.div`
 
 export const RecipeContainer = styled.div`
  border: 4px;
+ background: pink;  
+ margin: 10px; 
 `
 
 export const RecipeList = styled.div`
@@ -137,6 +139,8 @@ export const DescriptionDiv = styled.div `
 `
 
 export const ImageDiv = styled.div `
- border: 4px;
+ border: 4px solid;
+  height: 200px;
+  width: 350px;
 `
 

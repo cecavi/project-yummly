@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 import { SmallDiv, TagContainer, StyledSvg  } from '../styles//GlobalStyles'
 import { RecipeList, RecipeContainer, LikeContainer, DescriptionImagesTagsDiv, DescriptionDiv, ImageDiv } from '../styles/DivStyles'
 import TagsVisual from './TagsVisual'
-//import BREAKFAST from "../media/BREAKFAST.jpg"
-//import LUNCH from "../media/LUNCH.jpg"
-//import SNACK from "../media/SNACK.jpg"
-//import FOOD from "../media/FOOD.jpg"
-//import DINNER from "../media/DINNER.jpg"
+import BREAKFAST from "../media/BREAKFAST.jpg"
+import LUNCH from "../media/LUNCH.jpg"
+import SNACK from "../media/SNACK.jpg"
+import FOOD from "../media/FOOD.jpg"
+import DINNER from "../media/DINNER.jpg"
 import styled from "styled-components/macro";
 import { API_URL } from 'utils/utils';
 
@@ -63,7 +63,7 @@ const RecipeCard = ({recipeList, liked, setLiked}) => {
         </SmallDiv>
         <Link to={`/recipes/${singleRecipe._id}`}>
         <ImageDiv>
-            {singleRecipe.recipe.tags.includes('breakfast') ? <img src="" /> : singleRecipe.recipe.tags.includes('lunch') ? <img src="" /> : singleRecipe.recipe.tags.includes('dinner') ? <img src="" /> : singleRecipe.recipe.tags.includes('snack') ? <img src="" /> :  <img src="" />}
+            {singleRecipe.recipe.tags.includes('breakfast') ? <img src={BREAKFAST} /> : singleRecipe.recipe.tags.includes('lunch') ? <img src={LUNCH} /> : singleRecipe.recipe.tags.includes('dinner') ? <img src={DINNER} /> : singleRecipe.recipe.tags.includes('snack') ? <img src={SNACK} /> :  <img src={FOOD} />}
             </ImageDiv>
             <DescriptionDiv>
             <h3>{singleRecipe.recipe.name}</h3>

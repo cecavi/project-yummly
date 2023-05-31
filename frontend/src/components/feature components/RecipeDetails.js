@@ -3,11 +3,11 @@ import styled from "styled-components/macro";
 //import { StyledNonTransparentDiv } from "components/styles/DivStyles";
 import { Tag } from "./TagsVisual";
 //import { ImageDiv } from "components/styles/DivStyles";
-//import BREAKFAST from "../media/BREAKFAST.jpg"
-//import LUNCH from "../media/LUNCH.jpg"
-//import SNACK from "../media/SNACK.jpg"
-//import FOOD from "../media/FOOD.jpg"
-//import DINNER from "../media/DINNER.jpg"
+import BREAKFAST from "../media/BREAKFAST.jpg"
+import LUNCH from "../media/LUNCH.jpg"
+import SNACK from "../media/SNACK.jpg"
+import FOOD from "../media/FOOD.jpg"
+import DINNER from "../media/DINNER.jpg"
 
 const RecipeDetails = ({ recipeInfo }) => {
 
@@ -76,27 +76,28 @@ const RecipeDetails = ({ recipeInfo }) => {
 export default RecipeDetails
 
 const MainRecipeDiv = styled.div`
-
+border: 2px;
 `
 const RecipeInstructionsDiv = styled.div`
-    
+    border: 2px;
 `
 
 const Ingredients = styled.div`
-    
+    border: 2px;
 `
 const Instructions = styled.div`
-    
+    border: 2px;
 
 `
 const TagRecipe = styled.div`
-  
+  border: 2px;
 `
 
 const TagDiv = styled.div`
-    
+    border: 2px;
 `
 
 const BigImageDiv = styled.img`
-
+border-color: black;
+border: 2px;
 `

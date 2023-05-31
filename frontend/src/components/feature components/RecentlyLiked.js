@@ -28,7 +28,7 @@ useEffect(() => {
       console.error('Error:', error);
     });
 }, [userId]);
-
+/*
 if (posts.length > 0) {
 
     return (
@@ -41,6 +41,7 @@ if (posts.length > 0) {
         </MarginTopDiv>
     )
 } else {
+  */
     return (
         <MarginTopDiv>
             <h2>Recently liked recipes</h2>
@@ -49,11 +50,8 @@ if (posts.length > 0) {
     )
 }
 
-    
-}
-
 export default RecentlyLiked
 
 const MarginTopDiv = styled.div`
-    
+    border: 2px;
 `

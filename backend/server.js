@@ -98,7 +98,7 @@ const RecipeSchema = new mongoose.Schema({
   },
   likes: {
     type: Number,
-    default: null
+    default: 0
   },
   userId: {
     type: String,
@@ -257,7 +257,7 @@ app.get("/users/:userId/posts", async (req, res) => {
    }
 })
 
-// //show liked recipes from a specific user
+// show liked recipes from a specific user
 app.get("/users/:userId/likedposts", authenticateUser)
 app.get("/users/:userId/likedposts", async (req, res) => {
   try {
