@@ -118,11 +118,11 @@ export const LikeContainer = styled.div`
  border: 4px;
 `
 export const HeadlineDiv = styled.div`
-
+ border: 4px;
 `
 
 export const PostsToggle = styled.div`
-
+ border: 4px;
 `
 export const RecipeFeed = styled.div`
  border: 4px;

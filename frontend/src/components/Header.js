@@ -18,7 +18,7 @@ export const Header = () => {
         <StyledP>Logged in as: {username}</StyledP>
         )} */}
         <NavLink to="/" className="logo-group">
-          <h1>YUMMLY!</h1>
+          <h1>YUMMLY! This is the header component</h1>
           <StyledLogo>
           {/*<Logo /> {Logo}*/}
           </StyledLogo>

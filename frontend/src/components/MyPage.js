@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { API_URL } from 'utils/utils'
 import { useNavigate, Link } from 'react-router-dom'
-//import { PostsToggle, HeadlineDiv } from './styles/DivStyles'
-//import { RecipeFeed } from './styles/DivStyles'
+import { PostsToggle, HeadlineDiv } from './styles/DivStyles'
+import  RecipeFeed from './RecipeFeed'
 import RecipeCard from './feature components/RecipeCard'
 
 const MyPage = () => {
@@ -43,6 +43,7 @@ useEffect(() => {
 
   return (
     <RecipeFeed>
+      This is My Page
       <HeadlineDiv>
       <div>
         <h1>my recipes</h1>

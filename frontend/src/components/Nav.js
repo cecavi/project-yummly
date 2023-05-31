@@ -20,6 +20,7 @@ const Nav = () => {
   }
   return (
     <>
+    This is the navbar
     <StyledNav>
       <UnstyledBtn type="button" className='menu-icon' onClick={handleClick}>
         {click ?
