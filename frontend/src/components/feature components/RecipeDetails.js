@@ -97,7 +97,7 @@ const TagDiv = styled.div`
     border: 2px;
 `
 
-const BigImageDiv = styled.img`
+const BigImageDiv = styled.div`
 border-color: black;
 border: 2px;
 `
