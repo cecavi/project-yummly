@@ -43,7 +43,6 @@ useEffect(() => {
 
   return (
     <RecipeFeed>
-      This is My Page
       <HeadlineDiv>
       <div>
         <h1>my recipes</h1>

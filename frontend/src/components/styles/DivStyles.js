@@ -125,6 +125,7 @@ export const HeadlineDiv = styled.div`
 
 export const PostsToggle = styled.div`
  border: 4px;
+ display: flex;
 `
 export const RecipeFeed = styled.div`
  border: 4px;
