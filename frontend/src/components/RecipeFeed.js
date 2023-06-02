@@ -121,13 +121,54 @@ const RecipeFeed = () => {
 export default RecipeFeed
 
 const SectionAroundFeed = styled.section`
-
+width: 100%;
+display: flex; 
+flex-direction: column;
+align-items: center;
 `
 
 const FeedSection = styled.section`
-  
+  height: 100%;
+  margin-top: 20px;
+  display: grid;
+  width: 95%;
+  position: relative;
+  justify-items: center;
+
+    @media (min-width: 668px) and (max-width: 1024px) {
+      grid-template-columns: 2fr 1fr;
+      justify-items: stretch;
+      width: 90%;
+    }
+
+    @media (min-width: 1025px) {
+      grid-template-columns: 1fr 2fr 1fr;
+      column-gap: 20px;    
+      max-width: 1000px;
+    }
 `
 
 const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 95%;
 
-  `
+  button {
+    background-color:inherit;
+    border: none;
+    display: flex;
+    transition: 0.3s ease-in-out;
+    z-index: 98;
+
+    &:hover {
+    transform: scale(1.2);
+  }
+  }
+  p {
+    align-self: center;
+  }
+  img {
+    height: 30px;
+  }
+`

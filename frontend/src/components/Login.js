@@ -78,5 +78,8 @@ const Login = ({loginType, loginHeadline, buttonText}) => {
 export default Login
 
 const ErrorMsg = styled.p`
-  
+  color: red;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  text-align: center;
 `

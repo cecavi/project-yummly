@@ -31,7 +31,7 @@ export const Header = () => {
 export default Header
 
 const StyledHeader = styled.header`
-display: flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   width: 80%;
@@ -42,23 +42,80 @@ display: flex;
     font-size: 2rem;
   }
 
-  
+  @media (min-width: 668px) {
+    height: 140px;
+    width: 90%;
+
+    h1 {
+    font-size: 3rem;
+    }
+
+  }
+  @media (min-width: 1024px) {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    width: 95%;
+    height: 180px;
+
+
+    
+      h1 {
+        font-size: 3rem;
+        z-index: 1;
+      }
+      div {
+        display: flex;
+        align-items: flex-end;
+      }
+
+    }
 `
 
 const StyledLogo = styled.svg`
-   
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+
+  @media (min-width: 668px) {
+    width: 100px;
+    height: 100px;
+
+  }
+
+  @media (min-width: 1024px) {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    margin-left: 0px;
+    left: 20px;
+    top: -6px;
+    }
 `
 
 const Wrapper = styled.div`
-width: 100%;
-display: flex;
-justify-content: center;
-background-color: var(--color-red);
-position: fixed;
-z-index: 99;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-beige);
+  box-shadow: rgb(0 0 0 / 5%) 1px 1px 10px;
+  position: fixed;
+  z-index: 99;
 `
 
 const StyledP = styled.p`
+  
+  margin-left: 10px;
 
+  @media (min-width: 668px) {
+    left: 30px;
+    top: 285px;
+  }
+  @media (min-width: 1024px) {
+    position:absolute;
+    font-size: 1.2rem;
+    left: 60px;
+    top: 30px;
+  }
+  
   
 `

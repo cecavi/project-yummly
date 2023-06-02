@@ -52,6 +52,24 @@ if (posts.length > 0) {
 
 export default RecentlyLiked
 
-const MarginTopDiv = styled.div`
-    border: 2px;
+const MarginTopDiv = styled(StyledNonTransparentDiv)`
+    margin-top: 160px;
+    height: fit-content;
+    min-width: 250px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    a {
+        cursor: pointer;
+        margin-top: 5px;
+
+            &:hover {
+            color: var(--color-vividBlue);
+            }
+    }
 `

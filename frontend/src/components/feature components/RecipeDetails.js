@@ -76,28 +76,84 @@ const RecipeDetails = ({ recipeInfo }) => {
 export default RecipeDetails
 
 const MainRecipeDiv = styled.div`
-border: 2px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+
 `
 const RecipeInstructionsDiv = styled.div`
-    border: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+
+    @media (min-width: 668px) {
+        align-items: flex-start;
+    }
+    
+    @media (min-width: 1025px) {
+        flex-direction: row;
+        align-items: flex-start;
+    }
 `
 
-const Ingredients = styled.div`
-    border: 2px;
+const Ingredients = styled(StyledNonTransparentDiv)`
+    border-radius: 5px;
+    width: 100%;
+
+    ul {
+        list-style: inside;
+        padding-inline-start: 0px;
+    }
+    li {
+        margin-left: 0rem;
+    }
+
+    @media (min-width: 1025px) {
+        width: 50%;
+    }
 `
-const Instructions = styled.div`
-    border: 2px;
+const Instructions = styled(StyledNonTransparentDiv)`
+    border-radius: 3px;
+    background-color: inherit;
+    padding: 10px;
+    box-shadow: none;
+    
+    ol {
+        padding-inline-start: 20px;
+        li {
+            margin-left: 0rem;
+            width : 100%;
+
+        }
+    }
+
+    @media (min-width: 1025px) {
+        width: 50%;
+    }
 
 `
-const TagRecipe = styled.div`
-  border: 2px;
+const TagRecipe = styled(Tag)`
+  background-color: var(--color-beige);
+  color: black;
+  font-size: 12px;
+  padding: 5px; 
+  border-radius: 10px;
+  margin: 5px;
 `
 
 const TagDiv = styled.div`
-    border: 2px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
 `
 
-const BigImageDiv = styled.div`
-border-color: black;
-border: 2px;
+const BigImageDiv = styled(ImageDiv)`
+width: 100%;
+    img{
+        width: 100%;
+    }
 `

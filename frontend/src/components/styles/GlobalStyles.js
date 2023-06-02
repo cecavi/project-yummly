@@ -191,42 +191,83 @@ body {
   `
 
 
-export const OuterWrapper = styled.main`
-width: 100%;
-height: 100%;
-display: flex;
-flex-direction: column;
-`
-
-export const Innerwrapper = styled.div`
-margin: 0 auto;
-width: 100%;
-height: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-top: 100px;
-`
-export const FeedSection = styled.section`
-height: 100%;
-  margin-top: 4%;
-  display: grid;
+  export const OuterWrapper = styled.main`
   width: 100%;
-  position: relative;
-`
-
-export const SrOnly = styled.div`
- border:2px;
-`
-
-export const SmallDiv = styled.div`
- border:2px;
-`
-
-export const TagContainer = styled.div`
- border:2px;
-`
-
-export const StyledSvg = styled.svg`
- border:2px;
-`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  `
+  
+  export const Innerwrapper = styled.div`
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  
+  
+    @media (min-width: 667px) {
+      margin-top: 160px;  
+    }
+  
+    @media (min-width: 1024px) {
+      margin-top: 180px
+    }
+  `
+  export const FeedSection = styled.section`
+    height: 100%;
+    margin-top: 4%;
+    display: grid;
+    width: 100%;
+    position: relative;
+  
+      @media (min-width: 668px) and (max-width: 1024px) {
+        grid-template-columns: 2fr 1fr;
+        gap: 2%;
+        width: 80%
+      }
+  
+      @media (min-width: 1025px) {
+        grid-template-columns: 1fr 2fr 1fr;
+        column-gap: 2vw;    
+        width: 80%;
+      }
+  `
+  
+  export const SrOnly = styled.div`
+    position: absolute;
+     width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  `
+  
+  export const SmallDiv = styled.div`
+    font-size: 0.8rem;
+  
+    a {
+        &:hover {
+            color: var(--color-vividBlue);
+          }
+      }
+  `
+  
+  export const TagContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 0.8vw;
+  padding-top: 20px;
+  `
+  
+  export const StyledSvg = styled.svg`
+     &.liked {
+         fill:"red";
+     }
+  `
+  

@@ -76,8 +76,47 @@ export default SearchForUser
 
 const SearchForUserForm = styled.form`
 
+    label {
+        display: flex;
+        background: white;
+        border-radius: 10px;
+        padding: 5px 10px;
+        justify-content: space-between;
+    }
+
+    input {
+        border: none;
+        width: 100%;
+    }
+
+    button {
+        border: none;
+        background-color: inherit;
+    }
+
+    @media (min-width: 1024px) {
+        position: absolute;
+        right: 2.5%;
+        top: 30px;
+    }
+
 `
 
 const SearchResultsDiv = styled.div`
-    
+    margin-top: 5px;
+    height: 200px;
+    background-color: white;
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+    @media (min-width: 1024px) {
+        position: absolute;
+        right: 2.5%;
+        top: 80px;
+        width: 340px;
+        align-items: flex-start;
+    }
 `

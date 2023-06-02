@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, batch } from "react-redux";
 import styled from "styled-components/macro";
 import { API_URL } from "utils/utils";
-import recipeReducer from '../../reducers/RecipeReducer';
+import recipeReducer from '../../reducers/recipeReducer';
 
 
 const SingleFilter = ({ svg, title, array }) => {
@@ -78,17 +78,48 @@ const SingleFilter = ({ svg, title, array }) => {
 export default SingleFilter
 
 const SingleFilterDiv = styled.div`
-    
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    border-bottom: 2px solid var(--color-darkSand);
+    filter: drop-shadow(none);
+    width: 100%;
+    padding: 10px;
     `
 
 const DropdownSvg = styled.svg`
-    
+    align-self: center;
     `
 
 const TagBtnContainer = styled.div`
-    
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &.tags-hidden {
+        position: absolute;
+        width: 100%;
+        /* height: 100vh; */
+        top: 0%;
+        left: -1000px;
+        opacity: 0;
+    }
     `
 
 const TagBtn = styled.button`
- 
+  background-color: var(--color-beige);
+  color: black;
+  font-size: 12px;
+  padding: 5px; 
+  border-radius: 10px;
+  border: none;
+  margin: 2px;
+
+  &:hover {
+    background-color: white;
+  }
+
+  &.selected {
+    background-color: var(--color-beige);
+  }
   `

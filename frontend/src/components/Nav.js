@@ -66,11 +66,20 @@ const Nav = () => {
 export default Nav
 
 const StyledIcon = styled.svg`
+  width: 25px;
+  stroke: var(--color-vividBlue);
 
+  @media (min-width: 668px) {
+    width: 40px;
+  }
+  
+  @media (min-width: 1024px) {
+    display: none;
+  }
 `
 
 const StyledNav = styled.nav`
-height: 80px;
+  height: 80px;
   display: flex;
   justify-content: center;
   z-index: 2;
@@ -79,4 +88,5 @@ height: 80px;
     width: 70%;
 
   }
+
 `

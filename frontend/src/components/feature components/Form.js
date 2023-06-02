@@ -183,22 +183,107 @@ const Form = ({ setCollapsed }) => {
 
 export default Form
 
-const FormStyledDiv = styled.div`
+const FormStyledDiv = styled(StyledDiv)`
+  position: fixed;
+  top: 50%;  
+  left: 50%;                     
+  overflow-x: auto;
+  width: 100vw;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  z-index: 99;
+  padding-top: 50px;
+
+  input, textarea {
+    max-width: 1000px;
+  }
+
+  label {
+    width: 100%;
+  }
   
-`
+  form {
+    margin-top: 0px;
+    width: 100%;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  @media (min-width: 667px) {
+    width: 70vw;
+    height: 100vh;
+    max-height: 900px;
+
+    label {
+    width: 70%;
+    }
+  } 
+
+  @media (min-width: 1024px) {
+    width: 100vw;
+    height: 90vh;
+    max-width: 900px;
+    max-height: 900px;
+    top: 47%;
+
+    label {
+    width: 80%;
+    }
+  }
+  `
 
 const CreateRecipeDiv = styled.div`
- 
+  width: 100%;
+  border-bottom: 1px solid var(--color-darkSand);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+
+  button {
+    position: absolute;
+    right: 10%;
+    top: -50%;
+  }
 `
 
-const AddNewRecipeButton = styled.button`
-   
-`
+const AddNewRecipeButton = styled(StyledButton)`
+   text-align: center;
+   padding: 10px;
+  `
 
 const TagsDiv = styled.div`
-  
-`
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-around  
+  `
 
 const Tag = styled.div`
+margin: 20px;
 
+h2 {
+    font-size: 16px;
+    text-align: center;
+}
+div {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+
+    label {
+        width: 100%;
+        justify-self: start;
+        font-size: 14px;
+        /* display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: center; */
+        
+        input {
+          vertical-align: middle;
+        }
+    }
+}
 `

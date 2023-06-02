@@ -66,13 +66,48 @@ const Filter = () => {
 
 export default Filter
 
-const FilterDiv = styled.div`
-
+const FilterDiv = styled(StyledTransparentDiv)`
+box-shadow: none;
+min-width: 250px;
+    @media (max-width: 668px) {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-beige);
+        width: 90%;
+        justify-self: center;
+        border: none;
+        padding: 10px 20px;
+    }
+    div {
+        @media (max-width: 668px) {
+            &.filter-hidden {
+                position: absolute;
+                width: 100%;
+                height: 100vh;
+                top: 0%;
+                left: -1000px;
+                opacity: 0;
+            }
+        }
+    }
+    h1 {
+        font-size: 14px;
+    }
 `
-const FilterBtn = styled.button` 
-    
+const FilterBtn = styled(UnstyledBtn)`
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (min-width: 669px) {
+        svg {
+            display: none;
+        }
+    }
 `
 
 const H1andBtnDiv = styled.div`
-    
+    display: flex;
+    flex-direction: row;
 `
