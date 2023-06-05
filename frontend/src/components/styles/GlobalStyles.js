@@ -67,7 +67,8 @@ body {
     margin: 0;
     font-family: var(--font-main);
     background-color: var(--color-red);
-    color: var(--color-white);
+    // color: var(--color-white);
+    color: var(--color-black);
   }
 
   h1, h2 {
@@ -79,7 +80,7 @@ body {
   }
   
   a {
-    color: var(--color-white);
+    color: var(--color-darkSand);
     text-decoration: none;
   
   }
