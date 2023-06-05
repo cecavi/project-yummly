@@ -251,7 +251,23 @@ export const HeadlineDiv = styled.div`
 `
 
 export const PostsToggle = styled.div`
-  display:flex;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  a {
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  .active-h2 {
+    background-color: #ccc;
+  }
 `
 export const RecipeFeed = styled.div`
 width: 95%;

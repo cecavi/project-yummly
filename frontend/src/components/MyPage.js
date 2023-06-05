@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { API_URL } from 'utils/utils'
 import { useNavigate, Link } from 'react-router-dom'
-import { PostsToggle, HeadlineDiv } from './styles/DivStyles'
-import  RecipeFeed from './RecipeFeed'
+import { RecipeFeed, PostsToggle, HeadlineDiv } from './styles/DivStyles'
 import RecipeCard from './feature components/RecipeCard'
 
 const MyPage = () => {
