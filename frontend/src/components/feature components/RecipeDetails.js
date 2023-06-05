@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components/macro";
-//import { StyledNonTransparentDiv } from "components/styles/DivStyles";
+import { StyledNonTransparentDiv } from "components/styles/DivStyles";
 import { Tag } from "./TagsVisual";
-//import { ImageDiv } from "components/styles/DivStyles";
+import { ImageDiv } from "components/styles/DivStyles";
 import BREAKFAST from "../media/BREAKFAST.jpg"
 import LUNCH from "../media/LUNCH.jpg"
 import SNACK from "../media/SNACK.jpg"

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-//import { StyledTransparentDiv } from "../styles/DivStyles"
+import { StyledTransparentDiv } from "../styles/DivStyles"
 import SingleFilter from "./SingleFilter";
 import { MealArray } from "./Form"
 import { PreferencesArray } from "./Form"
