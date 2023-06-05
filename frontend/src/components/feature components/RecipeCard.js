@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { SmallDiv, TagContainer, StyledSvg  } from '../styles//GlobalStyles'
 import { RecipeList, RecipeContainer, LikeContainer, DescriptionImagesTagsDiv, DescriptionDiv, ImageDiv } from '../styles/DivStyles'
@@ -8,7 +8,7 @@ import LUNCH from "../media/LUNCH.jpg"
 import SNACK from "../media/SNACK.jpg"
 import FOOD from "../media/FOOD.jpg"
 import DINNER from "../media/DINNER.jpg"
-import styled from "styled-components/macro";
+// import styled from "styled-components/macro";
 import { API_URL } from 'utils/utils';
 
 
@@ -19,22 +19,25 @@ const RecipeCard = ({recipeList, liked, setLiked}) => {
 
     // Like-function for recipes   
     const onLikeClick = async (recipeid) => {
-      if (liked.includes(recipeid)){
-      } else {
-        const options = {
-          method: 'PATCH',
-          headers: {
-            'Content-Type': 'application/json',
-            "Authorization": accessToken
-          }
+      if (liked.includes(recipeid)) {
+        return; // Recipe is already liked, no action needed
+      }
+    
+      const options = {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': accessToken
         }
+      };
+      
         await fetch(API_URL(`recipes/${recipeid}`), options)
           .then((response) => response.json())
           .then(() => {
-              setLiked(liked.concat(recipeid))
+            setLiked((prevLiked) => [...prevLiked, recipeid]);
           })
       }
-    }
+    
 
   //Delete-function for recipes
     const onDeleteClick = async (recipeid) => {
