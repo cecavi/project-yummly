@@ -39,16 +39,18 @@ p, h1, h2, h3, h4, h5, h6 {
 
 :root {
   --color-red: #FF5858;
-  --color-white: #FFFFFF;
+  --color-white: #000000;
   --color-lightGrey: #8A8989;
-  --color-darkSand: #F2C19F;
+  --color-darkSand: #deb88;
   --color-sand: #F9DAC6;
   --color-beige: #FFEEE3;
   --color-vividBlue: #0000FF;
   --color-softPink: #F5C8C8;
   
-  --font-main: 'EB Garamond', serif;
+  --font-main: 'Hubballi', cursive;
+  --font-secondary: 'Grandstander', cursive;
   
+
   // example: font-family: var(--font-main)
 }
 
@@ -67,7 +69,8 @@ body {
     margin: 0;
     font-family: var(--font-main);
     background-color: var(--color-red);
-    color: var(--color-white);
+    // color: var(--color-white);
+    color: var(--color-black);
   }
 
   h1, h2 {
@@ -79,7 +82,7 @@ body {
   }
   
   a {
-    color: var(--color-white);
+    color: var(--color-darkSand);
     text-decoration: none;
   
   }
@@ -172,7 +175,6 @@ body {
   .logo-group {
     display: flex;
     align-items: center;
-    transform: rotate(0.0turn);
     transition: all 0.5s ease-in-out;
     margin-left: 5%;
 
@@ -182,7 +184,7 @@ body {
       }
     }
     &:hover {
-      transform: rotate(0.05turn);
+      transform: scale(1.1);
     }
     @media (min-width: 1024px) {
     min-width: 270px;

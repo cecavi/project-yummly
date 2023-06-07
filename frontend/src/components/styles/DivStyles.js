@@ -205,6 +205,7 @@ export const LikeContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   border-left: 2px solid var(--color-darkSand);
+  color: black;
   padding: 0px 0px 0px 20px;
   z-index: 1;
   text-align: center;

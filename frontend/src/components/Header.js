@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import Nav from './Nav'
-//import Logo from './media/Logo.svg'
+import LOGO from './media/Logo.svg'
 import { NavLink, useNavigate } from 'react-router-dom'
 
 export const Header = () => {
@@ -18,10 +18,8 @@ export const Header = () => {
         <StyledP>Logged in as: {username}</StyledP>
         )} */}
         <NavLink to="/" className="logo-group">
-          <h1>YUMMLY! This is the header component</h1>
-          <StyledLogo>
-          {/*<Logo /> {Logo}*/}
-          </StyledLogo>
+          <h1>YUMMLY!</h1>
+          <StyledLogo src={LOGO}/>
         </NavLink>
       </StyledHeader>
     </Wrapper>
@@ -71,7 +69,7 @@ const StyledHeader = styled.header`
     }
 `
 
-const StyledLogo = styled.svg`
+const StyledLogo = styled.img`
     width: 70px;
     height: 70px;
     margin-left: 10px;
@@ -81,15 +79,6 @@ const StyledLogo = styled.svg`
     height: 100px;
 
   }
-
-  @media (min-width: 1024px) {
-    width: 220px;
-    height: 220px;
-    position: absolute;
-    margin-left: 0px;
-    left: 20px;
-    top: -6px;
-    }
 `
 
 const Wrapper = styled.div`

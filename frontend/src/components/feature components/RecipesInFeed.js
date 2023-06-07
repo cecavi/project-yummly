@@ -20,26 +20,31 @@ const RecipesInFeed = () => {
         "Content-Type": "application/json",
         "Authorization": accessToken
       }
-    }
-      fetch(API_URL("recipes"), options)
+    };
+  
+    fetch(API_URL("recipes"), options)
       .then(res => res.json())
       .then(data => {
-      if(data.success) {
-        batch (() => {
-          dispatch(recipeReducer.actions.setItems(data.response))
-          dispatch(recipeReducer.actions.setError(null))
-        })
-      } else {
-        batch(() => {
-          dispatch(recipeReducer.actions.setItems([]))
-          dispatch(recipeReducer.actions.setError(data.response))
-        })
-      }
+        if (data.success) {
+          batch(() => {
+            dispatch(recipeReducer.actions.setItems(data.response));
+            dispatch(recipeReducer.actions.setError(null));
+          });
+        } else {
+          batch(() => {
+            dispatch(recipeReducer.actions.setItems([]));
+            dispatch(recipeReducer.actions.setError(data.response));
+          });
+        }
       })
-      .catch((error => {
-        console.error('Error:', error)
-      }))
-      }, [liked])
+      .catch(error => {
+        console.error('Error:', error);
+      })
+      .finally(() => {
+        setLiked([]); // Reset the liked state to an empty array
+      });
+  }, [liked]);
+  
   
     
   return (

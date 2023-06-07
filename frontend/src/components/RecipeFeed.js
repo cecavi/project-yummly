@@ -74,7 +74,7 @@ const RecipeFeed = () => {
               type="button"
               onClick={toggle}>
               <img src={AddIcon} />
-              <p>add new recipe</p>
+              <p>+ add new recipe</p>
             </button>
             {!collapsed && <Form collapsed={collapsed} setCollapsed={setCollapsed} />}
             </ButtonContainer>
@@ -92,7 +92,7 @@ const RecipeFeed = () => {
             <button  
               type="button"
               onClick={toggle}>
-              <p>add new recipe</p>
+              <p>+ add new recipe</p>
             </button>
             {!collapsed && <Form collapsed={collapsed} setCollapsed={setCollapsed} />}
             </ButtonContainer>
