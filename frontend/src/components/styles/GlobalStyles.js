@@ -44,7 +44,7 @@ p, h1, h2, h3, h4, h5, h6 {
   --color-darkSand: #deb88;
   --color-sand: #F9DAC6;
   --color-beige: #FFEEE3;
-  --color-vividBlue: #0000FF;
+  --color-vividBlue: #39909F;
   --color-softPink: #F5C8C8;
   
   --font-main: 'Hubballi', cursive;
@@ -167,7 +167,7 @@ body {
     }
     @media (min-width: 1024px) {
       background-color: inherit;
-      position: initial
+      position: initial;
 
     }
   }

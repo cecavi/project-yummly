@@ -28,26 +28,27 @@ useEffect(() => {
       console.error('Error:', error);
     });
 }, [userId]);
-/*
+
 if (posts.length > 0) {
 
-    return (
-        <MarginTopDiv>
-            <h2>Recently liked recipes</h2>
-            {posts.map((singleRecipe) => 
-                <Link to={`/recipes/${singleRecipe._id}`} recipeid={singleRecipe._id}  key={singleRecipe._id}>
-                {singleRecipe.recipe.name}</Link>
-            )}
-        </MarginTopDiv>
-    )
-} else {
-  */
+//     return (
+//         <MarginTopDiv>
+//             <h2>Recently liked recipes</h2>
+//             {posts.map((singleRecipe) => 
+//                 <Link to={`/recipes/${singleRecipe._id}`} recipeid={singleRecipe._id}  key={singleRecipe._id}>
+//                 {singleRecipe.recipe.name}</Link>
+//             )}
+//         </MarginTopDiv>
+//     )
+// } else {
+
     return (
         <MarginTopDiv>
             <h2>Recently liked recipes</h2>
             <p>You have not liked any recipes yet</p>
         </MarginTopDiv>
     )
+}
 }
 
 export default RecentlyLiked

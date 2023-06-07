@@ -1,5 +1,4 @@
 import styled from 'styled-components/macro'
-import { SmallDiv } from './GlobalStyles'
 
 export const StyledTransparentDiv = styled.div`
   padding: 20px;
@@ -33,7 +32,7 @@ export const StyledDiv = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-red);
+  background-color: var(--color-beige);
   box-shadow: rgb(0 0 0 / 5%) 1px 1px 10px;
   margin-top: 5%;
 
