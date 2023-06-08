@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react'
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import Form from './feature components/Form';
 import Filter from './feature components/Filter';
 import RecentlyLiked from './feature components/RecentlyLiked';

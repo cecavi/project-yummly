@@ -6,10 +6,11 @@ import RecipeCard from './feature components/RecipeCard'
 
 const MyPage = () => {
 const [myPosts, setMyPosts] = useState([])
+const [myLikedRecipes, setMyLikedRecipes] = useState([])
 const accessToken = localStorage.getItem('accessToken');
 const userId = localStorage.getItem('userId');
 const [toggle, setToggle]= useState(false)
-const [liked, setLiked] = useState([])
+// const [liked, setLiked] = useState([])
 
 const navigate = useNavigate()
 
@@ -28,11 +29,16 @@ const options = {
   }
 }
  // fetch the posted or liked recipes depending on the toggle 
-useEffect(() => {
+ useEffect(() => {
   fetch(API_URL(toggle ? `users/${userId}/posts` : `users/${userId}`), options)
-  .then((response) => response.json())
-  .then((data) => {
-    setMyPosts(toggle ? data.response.reverse() : data.response.likedRecipes.reverse());
+    .then((response) => response.json())
+    .then((data) => {
+      if (toggle) {
+        setMyPosts(data.response.reverse());
+      } else {
+        const likedRecipes = data.response.likedRecipes.reverse();
+        setMyLikedRecipes(likedRecipes);
+      }
     })
     .catch((error) => {
       console.error('Error:', error);
@@ -40,24 +46,29 @@ useEffect(() => {
 }, [toggle]);
 
 
-  return (
-    <RecipeFeed>
-      <HeadlineDiv>
+
+return (
+  <RecipeFeed>
+    <HeadlineDiv>
       <div>
-        <h1>my recipes</h1>
+        <h1>My Recipes</h1>
       </div>
       <PostsToggle>
         <a onClick={() => setToggle(true)}>
           <h2 className={toggle ? 'active-h2' : ''}>Posted</h2>
         </a>
-        <a onClick={() => setToggle(false) }>
-        <h2 className={toggle ? '' : 'active-h2'}>Liked</h2>
+        <a onClick={() => setToggle(false)}>
+          <h2 className={toggle ? '' : 'active-h2'}>Liked</h2>
         </a>
       </PostsToggle>
-      </HeadlineDiv>
-      <RecipeCard recipeList={myPosts} />
-    </RecipeFeed>
-  )
-}
+    </HeadlineDiv>
+    {toggle ? (
+      <RecipeCard recipeList={myPosts.reverse()} />
+    ) : (
+      <RecipeCard recipeList={myLikedRecipes} />
+    )}
+  </RecipeFeed>
+);
+    }
 
 export default MyPage

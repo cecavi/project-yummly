@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState }from 'react'
 import { Link } from 'react-router-dom'
 import { SmallDiv, TagContainer, StyledSvg  } from '../styles//GlobalStyles'
 import { RecipeList, RecipeContainer, LikeContainer, DescriptionImagesTagsDiv, DescriptionDiv, ImageDiv } from '../styles/DivStyles'
@@ -12,10 +12,10 @@ import DINNER from "../media/DINNER.jpg"
 import { API_URL } from 'utils/utils';
 
 
-const RecipeCard = ({recipeList, liked, setLiked}) => {
- const userId = localStorage.getItem('userId');
- const accessToken = localStorage.getItem('accessToken')
- console.log(liked)
+const RecipeCard = ({ recipeList }) => {
+  const userId = localStorage.getItem('userId');
+  const accessToken = localStorage.getItem('accessToken');
+  const [liked, setLiked] = useState([]);
 
     // Like-function for recipes   
     const onLikeClick = async (recipeid) => {
