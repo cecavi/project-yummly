@@ -30,17 +30,18 @@ useEffect(() => {
 }, [userId]);
 
 if (posts.length > 0) {
+  const lastThreeLikedRecipes = posts.slice(0, 3);
 
-//     return (
-//         <MarginTopDiv>
-//             <h2>Recently liked recipes</h2>
-//             {posts.map((singleRecipe) => 
-//                 <Link to={`/recipes/${singleRecipe._id}`} recipeid={singleRecipe._id}  key={singleRecipe._id}>
-//                 {singleRecipe.recipe.name}</Link>
-//             )}
-//         </MarginTopDiv>
-//     )
-// } else {
+    return (
+        <MarginTopDiv>
+            <h2>Recently liked recipes</h2>
+            {lastThreeLikedRecipes.map((singleRecipe) => 
+                <Link to={`/recipes/${singleRecipe._id}`} recipeid={singleRecipe._id}  key={singleRecipe._id}>
+                {singleRecipe.recipe.name}</Link>
+            )}
+        </MarginTopDiv>
+    )
+} else {
 
     return (
         <MarginTopDiv>

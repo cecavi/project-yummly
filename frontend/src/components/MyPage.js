@@ -29,22 +29,38 @@ const options = {
   }
 }
  // fetch the posted or liked recipes depending on the toggle 
- useEffect(() => {
-  fetch(API_URL(toggle ? `users/${userId}/posts` : `users/${userId}`), options)
+ const fetchPostedRecipes = () => {
+  fetch(API_URL(`users/${userId}/posts`), options)
     .then((response) => response.json())
     .then((data) => {
-      if (toggle) {
-        setMyPosts(data.response.reverse());
-      } else {
-        const likedRecipes = data.response.likedRecipes.reverse();
-        setMyLikedRecipes(likedRecipes);
-      }
+      setMyPosts(data.response.reverse());
     })
     .catch((error) => {
       console.error('Error:', error);
     });
-}, [toggle]);
+};
 
+const fetchLikedRecipes = () => {
+  fetch(API_URL(`users/${userId}`), options)
+    .then((response) => response.json())
+    .then((data) => {
+      const likedRecipes = data.response.likedRecipes.reverse();
+      setMyLikedRecipes(likedRecipes);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+};
+
+useEffect(() => {
+  if (toggle) {
+    fetchPostedRecipes();
+  } else {
+    fetchLikedRecipes();
+  }
+}, [userId, toggle]);
+
+ 
 
 
 return (
