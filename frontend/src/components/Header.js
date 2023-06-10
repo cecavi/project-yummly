@@ -18,7 +18,7 @@ export const Header = () => {
         <StyledP>Logged in as: {username}</StyledP>
         )} */}
         <NavLink to="/" className="logo-group">
-          <h1>YUMMLY!</h1>
+          <h1>Yummly!</h1>
           <StyledLogo src={LOGO}/>
         </NavLink>
       </StyledHeader>
@@ -36,8 +36,17 @@ const StyledHeader = styled.header`
   height: 100px;
 
 
+  .logo-group {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
   h1 {
     font-size: 2rem;
+    color: white;
+    font-family: var(--font-secondary);
   }
 
   @media (min-width: 668px) {
