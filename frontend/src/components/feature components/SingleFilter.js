@@ -48,7 +48,7 @@ const SingleFilter = ({ svg, title, array }) => {
         .catch((error => {
           console.error('Error:', error)
         }))
-  }, [filterTags])
+  }, [filtering, value])
     
   return (
     <>
@@ -107,7 +107,7 @@ const TagBtnContainer = styled.div`
     `
 
 const TagBtn = styled.button`
-  background-color: var(--color-beige);
+  background-color: var(--color-sand);
   color: black;
   font-size: 12px;
   padding: 5px; 
@@ -120,6 +120,6 @@ const TagBtn = styled.button`
   }
 
   &.selected {
-    background-color: var(--color-beige);
+    background-color: var(--color-sand);
   }
   `

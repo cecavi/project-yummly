@@ -32,7 +32,7 @@ export const StyledDiv = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-beige);
+  background-color: var(--color-sand);
   box-shadow: rgb(0 0 0 / 5%) 1px 1px 10px;
   margin-top: 5%;
 
@@ -117,7 +117,7 @@ export const StyledDiv = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-beige);
+  background-color: var(--color-sand);
   box-shadow: rgb(0 0 0 / 5%) 1px 1px 10px;
   margin-top: 30px;
 
@@ -162,7 +162,7 @@ export const RecipeContainer = styled.div`
 display: flex;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
 border-radius: 15px;
-background-color: var(--color-beige);
+background-color: var(--color-sand);
 width: 100%;
 height: 100%;
 padding: 20px;

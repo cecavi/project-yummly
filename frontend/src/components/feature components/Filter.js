@@ -68,11 +68,12 @@ export default Filter
 
 const FilterDiv = styled(StyledTransparentDiv)`
 box-shadow: none;
+border: 1px solid var(--color-sand);
 min-width: 250px;
     @media (max-width: 668px) {
         display: flex;
         flex-direction: column;
-        background-color: var(--color-beige);
+        background-color: var(--color-sand);
         width: 90%;
         justify-self: center;
         border: none;

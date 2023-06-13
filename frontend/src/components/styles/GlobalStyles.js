@@ -46,6 +46,7 @@ p, h1, h2, h3, h4, h5, h6 {
   --color-beige: #FFEEE3;
   --color-vividBlue: #39909F;
   --color-softPink: #F5C8C8;
+  --color-black: #000000;
   
   --font-main: 'Hubballi', cursive;
   --font-secondary: 'Grandstander', cursive;

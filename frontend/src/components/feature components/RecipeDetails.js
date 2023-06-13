@@ -102,7 +102,7 @@ const RecipeInstructionsDiv = styled.div`
 const Ingredients = styled(StyledNonTransparentDiv)`
     border-radius: 5px;
     width: 100%;
-    background-color: var(--color-beige);
+    background-color: var(--color-sand);
 
     ul {
         list-style: inside;
@@ -118,7 +118,7 @@ const Ingredients = styled(StyledNonTransparentDiv)`
 `
 const Instructions = styled(StyledNonTransparentDiv)`
     border-radius: 3px;
-    background-color: var(--color-beige);
+    background-color: var(--color-sand);
     padding: 10px;
     width: 100%;
     box-shadow: none;
@@ -138,7 +138,7 @@ const Instructions = styled(StyledNonTransparentDiv)`
 
 `
 const TagRecipe = styled(Tag)`
-  background-color: var(--color-beige);
+  background-color: var(--color-sand);
   color: black;
   font-size: 12px;
   padding: 5px; 

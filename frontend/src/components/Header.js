@@ -85,26 +85,26 @@ const Wrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: var(--color-beige);
+  background-color: var(--color-sand);
   box-shadow: rgb(0 0 0 / 5%) 1px 1px 10px;
   position: fixed;
   z-index: 99;
 `
 
-const StyledP = styled.p`
+// const StyledP = styled.p`
   
-  margin-left: 10px;
+//   margin-left: 10px;
 
-  @media (min-width: 668px) {
-    left: 30px;
-    top: 285px;
-  }
-  @media (min-width: 1024px) {
-    position:absolute;
-    font-size: 1.2rem;
-    left: 60px;
-    top: 30px;
-  }
+//   @media (min-width: 668px) {
+//     left: 30px;
+//     top: 285px;
+//   }
+//   @media (min-width: 1024px) {
+//     position:absolute;
+//     font-size: 1.2rem;
+//     left: 60px;
+//     top: 30px;
+//   }
   
   
-`
+// `

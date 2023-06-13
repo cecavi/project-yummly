@@ -257,7 +257,7 @@ const TagsDiv = styled.div`
   display: flex;
   flex-direction: row;
   width: 80%;
-  justify-content: space-around  
+  justify-content: space-around; 
   `
 
 const Tag = styled.div`

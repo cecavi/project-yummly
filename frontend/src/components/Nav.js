@@ -66,7 +66,7 @@ export default Nav
 
 const StyledIcon = styled.svg`
   width: 25px;
-  stroke: var(--color-vividBlue);
+  stroke: var(--color-black);
 
   @media (min-width: 668px) {
     width: 40px;
