@@ -105,7 +105,7 @@ const SearchForUserForm = styled.form`
 const SearchResultsDiv = styled.div`
     margin-top: 5px;
     height: 200px;
-    background-color: white;
+    background-color: var(--color-white);
     overflow: hidden;
     overflow-y: auto;
     display: flex;

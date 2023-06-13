@@ -39,7 +39,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 :root {
   --color-red: #FF5858;
-  --color-white: #000000;
+  --color-white: #FFFFFF;
   --color-lightGrey: #8A8989;
   --color-darkSand: #deb88;
   --color-sand: #F9DAC6;
@@ -70,8 +70,8 @@ body {
     margin: 0;
     font-family: var(--font-main);
     background-color: var(--color-red);
-    // color: var(--color-white);
-    color: var(--color-black);
+    color: var(--color-white);
+
   }
 
   h1, h2 {
@@ -181,7 +181,7 @@ body {
 
     a {
       &:hover {
-        color: var(--color-black);
+        color: var(--color-white);
       }
     }
     &:hover {

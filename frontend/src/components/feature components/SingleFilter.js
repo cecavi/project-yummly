@@ -116,7 +116,7 @@ const TagBtn = styled.button`
   margin: 2px;
 
   &:hover {
-    background-color: white;
+    background-color: var(--color-white);
   }
 
   &.selected {

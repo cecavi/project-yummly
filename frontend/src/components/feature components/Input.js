@@ -15,3 +15,4 @@ const Input = ({ srOnly, placeholder, value, onChange, type }) => {
 }
 
 export default Input
+
