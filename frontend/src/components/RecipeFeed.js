@@ -11,6 +11,7 @@ const RecipeFeed = () => {
   const navigate = useNavigate()
   const accessToken = localStorage.getItem('accessToken')
   const [collapsed, setCollapsed] = useState(true)
+  const [liked, setLiked] = useState([]);
 
   useEffect(() => {
     if(!accessToken) {
@@ -76,7 +77,7 @@ const RecipeFeed = () => {
             </button>
             {!collapsed && <Form collapsed={collapsed} setCollapsed={setCollapsed} />}
             </ButtonContainer>
-        <RecipesInFeed />
+        <RecipesInFeed/>
         </div>
         <div>
           <Filter />
@@ -94,7 +95,7 @@ const RecipeFeed = () => {
             </button>
             {!collapsed && <Form collapsed={collapsed} setCollapsed={setCollapsed} />}
             </ButtonContainer>
-        <RecipesInFeed />
+        <RecipesInFeed/>
         </div>
         <div>
           <Filter />
