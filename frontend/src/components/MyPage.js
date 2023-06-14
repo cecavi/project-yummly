@@ -11,6 +11,7 @@ const accessToken = localStorage.getItem('accessToken');
 const userId = localStorage.getItem('userId');
 const [toggle, setToggle]= useState(false)
 // const [liked, setLiked] = useState([])
+const [loading, setLoading] = useState(false)
 
 const navigate = useNavigate()
 
@@ -33,7 +34,9 @@ const options = {
   fetch(API_URL(`users/${userId}/posts`), options)
     .then((response) => response.json())
     .then((data) => {
+      console.log('data response', data.response)
       setMyPosts(data.response.reverse());
+      setLoading(false)
     })
     .catch((error) => {
       console.error('Error:', error);
@@ -54,6 +57,7 @@ const fetchLikedRecipes = () => {
 
 useEffect(() => {
   if (toggle) {
+    setLoading(true)
     fetchPostedRecipes();
   } else {
     fetchLikedRecipes();
@@ -79,7 +83,9 @@ return (
       </PostsToggle>
     </HeadlineDiv>
     {toggle ? (
-      <RecipeCard recipeList={myPosts.reverse()} />
+      <>
+      {loading ? <p>loading...</p> : <RecipeCard recipeList={myPosts.reverse()} />}
+      </>
     ) : (
       <RecipeCard recipeList={myLikedRecipes} />
     )}

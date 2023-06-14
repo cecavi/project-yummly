@@ -25,6 +25,7 @@ const RecipesInFeed = () => {
       .then(res => res.json())
       .then(data => {
         if (data.success) {
+          console.log('FETCHING ALL THE RECIPES')
           batch(() => {
             dispatch(recipeReducer.actions.setItems(data.response));
             dispatch(recipeReducer.actions.setError(null));
@@ -42,7 +43,7 @@ const RecipesInFeed = () => {
       .finally(() => {
         setLiked([]); // Reset the liked state to an empty array
       });
-  }, [liked]);
+  }, []);
   
   
     
