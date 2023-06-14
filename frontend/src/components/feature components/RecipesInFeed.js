@@ -44,8 +44,6 @@ const RecipesInFeed = () => {
         setLiked([]); // Reset the liked state to an empty array
       });
   }, []);
-  
-  
     
   return (
     <RecipeFeed>

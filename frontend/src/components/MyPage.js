@@ -49,6 +49,7 @@ const fetchLikedRecipes = () => {
     .then((data) => {
       const likedRecipes = data.response.likedRecipes.reverse();
       setMyLikedRecipes(likedRecipes);
+      setLoading(false)
     })
     .catch((error) => {
       console.error('Error:', error);
@@ -60,6 +61,7 @@ useEffect(() => {
     setLoading(true)
     fetchPostedRecipes();
   } else {
+    setLoading(true)
     fetchLikedRecipes();
   }
 }, [userId, toggle]);
@@ -87,7 +89,9 @@ return (
       {loading ? <p>loading...</p> : <RecipeCard recipeList={myPosts.reverse()} />}
       </>
     ) : (
-      <RecipeCard recipeList={myLikedRecipes} />
+      <>
+      {loading ? <p>loading...</p> : <RecipeCard recipeList={myLikedRecipes} />}
+      </>
     )}
   </RecipeFeed>
 );

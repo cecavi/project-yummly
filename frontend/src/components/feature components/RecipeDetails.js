@@ -13,17 +13,14 @@ const RecipeDetails = ({ recipeInfo }) => {
 
     // Turning ingredients string into array (to be able to display the ingredients in a list). The string is split at each comma.
     const IngredientsIntoList = recipeInfo.map((recipe) => {
-        return (
-            recipe.ingredients[0].split(',')
-        )
-    })
-
-    // Turning the instructions string into an array (to be able to display the ingredients in a list). The string is split at each line-break.
-    const InstructionsIntoList = recipeInfo.map((recipe) => {
-        return (
-            recipe.instructions[0].split('\n')
-        )
-    })
+        const ingredients = recipe.ingredients && recipe.ingredients[0];
+        return ingredients ? ingredients.split(',') : [];
+      });
+      
+      const InstructionsIntoList = recipeInfo.map((recipe) => {
+        const instructions = recipe.instructions && recipe.instructions[0];
+        return instructions ? instructions.split('\n') : [];
+      });
 
     return (
         <>
