@@ -39,12 +39,16 @@ export const StyledDiv = styled.div`
 
   h1, h2 {
     margin-bottom: 15px;
-    color: var(--color-white);
+    color: var(--color-brown);
   }
 
   h3 {
     font-weight: 400;
-    color: var(--color-white);
+    color: var(--color-brown);
+  }
+
+  p {
+    color: var(--color-brown);
   }
 
 
@@ -123,7 +127,11 @@ export const StyledDiv = styled.div`
 
   h3 {
     font-weight: 400;
-    color: var(--color-white);
+    color: var(--color-brown);
+  }
+
+  p {
+    color: var(--color-brown);
   }
 
   span {
@@ -203,7 +211,7 @@ export const LikeContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   border-left: 2px solid var(--color-darkSand);
-  color: var(--color-black);
+  color: var(--color-brown);
   padding: 0px 0px 0px 20px;
   z-index: 1;
   text-align: center;
@@ -233,13 +241,13 @@ export const HeadlineDiv = styled.div`
 
   .active-h2 {
     color: var(--color-beige);
-    background-color: var(--color-darkSand);
+    background-color: var(--color-brown);
   }
   h2 {
     font-size: 1rem;
     border-radius: 20px;
     padding: 10px 20px;
-    color: var(--color-white);
+    color: var(--color-brown);
   }
 
   h1 {
@@ -290,6 +298,7 @@ export const DescriptionImagesTagsDiv = styled.div`
 
 export const DescriptionDiv = styled.div `
   margin-left: 20px;
+  color: var(--color-brown);
 `
 
 export const ImageDiv = styled.div `

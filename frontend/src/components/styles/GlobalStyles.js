@@ -38,16 +38,17 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 :root {
-  --color-red: #FF5858;
+  --color-red: #DFD3C3;
   --color-white: #FFFFFF;
   --color-lightGrey: #8A8989;
-  --color-darkSand: #deb88;
-  --color-sand: #F9DAC6;
+  --color-darkSand: #D7C0AE;
+  --color-sand: #F8EDE3;
   --color-beige: #FFEEE3;
   --color-vividBlue: #39909F;
   --color-softPink: #F5C8C8;
   --color-black: #000000;
-  
+  --color-brown: #967E76;
+
   --font-main: 'Hubballi', cursive;
   --font-secondary: 'Grandstander', cursive;
   
@@ -70,7 +71,7 @@ body {
     margin: 0;
     font-family: var(--font-main);
     background-color: var(--color-red);
-    color: var(--color-white);
+    color: var(--color-brown);
 
   }
 
@@ -83,9 +84,8 @@ body {
   }
   
   a {
-    color: var(--color-darkSand);
+    color: var(--color-brown);
     text-decoration: none;
-  
   }
 
   .nav-menu {
@@ -181,7 +181,7 @@ body {
 
     a {
       &:hover {
-        color: var(--color-white);
+        color: var(--color-brown);
       }
     }
     &:hover {
@@ -209,7 +209,6 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
-  
   
     @media (min-width: 667px) {
       margin-top: 160px;  

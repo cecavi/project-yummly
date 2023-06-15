@@ -98,7 +98,7 @@ const MarginTopDiv = styled(StyledNonTransparentDiv)`
   h2 {
     font-size: 1rem;
   }
-
+  
   a {
     cursor: pointer;
     margin-top: 5px;

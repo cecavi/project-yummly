@@ -12,7 +12,7 @@ const TagsVisual = ({ tag }) => {
 export default TagsVisual
 
 export const Tag = styled.div`
-  background-color: var(--color-softPink);
+  background-color: #D7C0AE;
   color: black;
   font-size: 12px;
   padding: 5px; 

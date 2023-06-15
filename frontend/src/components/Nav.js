@@ -66,7 +66,7 @@ export default Nav
 
 const StyledIcon = styled.svg`
   width: 25px;
-  stroke: var(--color-white);
+  stroke: var(--color-brown);
 
   @media (min-width: 668px) {
     width: 40px;
@@ -83,7 +83,7 @@ const StyledNav = styled.nav`
   justify-content: center;
   z-index: 2;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  color: var(--color-white);
+  color: var(--color-brown);
 
   .navbar-item {
     font-size: 30px;

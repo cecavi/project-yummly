@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import Nav from './Nav'
-import LOGO from './media/Logo.svg'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCutlery } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from 'react-router-dom'
 
 export const Header = () => {
 
@@ -12,19 +13,19 @@ export const Header = () => {
 
   return (
     <Wrapper>
-      <StyledHeader>
-        <Nav />
-        {/* {accessToken &&(
-        <StyledP>Logged in as: {username}</StyledP>
-        )} */}
-        <NavLink to="/" className="logo-group">
-          <h1>Yummly!</h1>
-          <StyledLogo src={LOGO}/>
-        </NavLink>
-      </StyledHeader>
-    </Wrapper>
-  )
-}
+    <StyledHeader>
+      <Nav />
+      {/* {accessToken && (
+      <StyledP>Logged in as: {username}</StyledP>
+      )} */}
+      <NavLink to="/" className="logo-group">
+        <h1>Yummly!</h1>
+        <FontAwesomeIcon icon={faCutlery} size="4x" />
+      </NavLink>
+    </StyledHeader>
+  </Wrapper>
+);
+};
 
 export default Header
 
@@ -38,6 +39,7 @@ const StyledHeader = styled.header`
 
   .logo-group {
     display: flex;
+    margin-bottom: 20px;
     align-items: center;
     flex-direction: row-reverse;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -45,7 +47,8 @@ const StyledHeader = styled.header`
 
   h1 {
     font-size: 2rem;
-    color: var(--color-white);
+    margin-left: 20px;
+    color: var(--color-brown);
     font-family: var(--font-secondary);
   }
 
