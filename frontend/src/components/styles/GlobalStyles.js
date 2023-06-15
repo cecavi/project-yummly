@@ -97,9 +97,9 @@ body {
     top: 0%;
     left: -1000px;
     padding-top: 15%;
-    background: linear-gradient(147deg,rgba(249,218,198,1) 0%,rgba(242,193,159,1) 100%);
     opacity: 0;
     transition: all 0.6s ease-in-out;
+    background-color: var(--color-red);
 
     a {
       &:hover {
@@ -109,6 +109,7 @@ body {
     li {
       margin-left: -40px;
       margin-top: 10px;
+      
     }
 
     a, button {
@@ -125,8 +126,7 @@ body {
     } 
 
     @media (min-width: 668px) {
-      /* padding-top: 20%; */
-
+      
     }
 
     @media (min-width: 1024px) {

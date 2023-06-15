@@ -120,7 +120,7 @@ const Instructions = styled(StyledNonTransparentDiv)`
     width: 100%;
     box-shadow: none;
     
-    ol {
+    ul {
         padding-inline-start: 20px;
         li {
             margin-left: 0rem;

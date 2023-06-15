@@ -15,9 +15,6 @@ export const Header = () => {
     <Wrapper>
     <StyledHeader>
       <Nav />
-      {/* {accessToken && (
-      <StyledP>Logged in as: {username}</StyledP>
-      )} */}
       <NavLink to="/" className="logo-group">
         <h1>Yummly!</h1>
         <FontAwesomeIcon icon={faCutlery} size="4x" />
@@ -120,21 +117,3 @@ const StyledP = styled.p`
   
   
 `
-
-// const StyledP = styled.p`
-  
-//   margin-left: 10px;
-
-//   @media (min-width: 668px) {
-//     left: 30px;
-//     top: 285px;
-//   }
-//   @media (min-width: 1024px) {
-//     position:absolute;
-//     font-size: 1.2rem;
-//     left: 60px;
-//     top: 30px;
-//   }
-  
-  
-// `
